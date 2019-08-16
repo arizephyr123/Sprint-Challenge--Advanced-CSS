@@ -166,10 +166,11 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
 }
 nav h1 {
   font-size: 3.2rem;
+  color: #23293B;
 }
 nav div {
   display: flex;
@@ -180,8 +181,9 @@ nav div {
 }
 nav div a {
   text-decoration: none;
+  color: #23293B;
   font-size: 1.6rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
 }
 footer {
   color: #22283B;
@@ -209,6 +211,20 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (min-width: 500px) {
+  .home .space-images {
+    align-content: stretch;
+  }
+  .home .space-images .blast {
+    width: 90vw;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -230,6 +246,13 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    display: flex;
+    align-content: stretch;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
