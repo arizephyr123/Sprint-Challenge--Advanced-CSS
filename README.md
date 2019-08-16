@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive Web Design: one design file can be deployed for any device and will adjust to the screen size accordingly 
+
+Adaptive web design: separate design flies created for a mobile, tablet, desktop etc based on the size of the device screen
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that the web design is based on how it will look on a mobile device first then is tweaked with breakpoints/media queries to adjust to a desktop screen. In mobile first design @ media min-width is used for media queries. Desktop first is the opposite- he initial design has the desktop sized screen in mind then used @ media max-with to make adjustments for smaller/mobile screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This sets the parent or base font of a similar size to medium in Chrome so rem will re-size according to this baseline font size. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing unlocks new tools and functions above what vanilla CSS alone can provide. It is made up of 3 parts:
+*A syntax piece which makes available new functions. For this project we use LESS
+*Compiler- we use node JS
+*output or what displays the styling. CSS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like the ease of making broad changes with  mixins but other than for flex box properties, I do not yet see many uses for parametric mixins. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -78,7 +93,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [ x ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
