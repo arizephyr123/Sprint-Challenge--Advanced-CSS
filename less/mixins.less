@@ -1,1 +1,38 @@
 // Mixins Here
+
+// * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+
+// * [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+
+// * [ ]  Use at least 2 parameters to create your button
+
+// * [ ] Create a hover state that swaps the background color and font color of the base button styles.
+
+.display-flex(@direction, @justify, @align){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    }
+
+    //direction:row, column
+    //justify: flex-start/end, center, space-between/around/evenly
+    //align: flex-start/end, center, stretch, baseline
+
+
+    .buttonStyle(){
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        width: 40%; 
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+          }
+    
+    }

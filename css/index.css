@@ -160,6 +160,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+nav h1 {
+  font-size: 3.2rem;
+}
+nav a {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -211,6 +225,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 40%;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
