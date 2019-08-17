@@ -44,7 +44,7 @@ Mobile first means that the web design is based on how it will look on a mobile 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-This sets the parent or base font of a similar size to medium in Chrome so rem will re-size according to this baseline font size. 
+This sets the parent or base font of a similar size to medium in Chrome so rem will re-size according to this baseline font size. Also this sets 1 rem to 10 px for easier conversion. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
