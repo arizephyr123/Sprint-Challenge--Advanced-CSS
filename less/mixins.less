@@ -1,1 +1,36 @@
 // Mixins Here
+
+.display-flex(@direction, @justify, @align){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    }
+
+    //direction:row, column
+    //justify: flex-start/end, center, space-between/around/evenly
+    //align: flex-start/end, center, stretch, baseline
+
+
+    .buttonStyle(@radius, @padding){
+        background-color: black;
+        color: white;
+        border-radius: @radius;
+        width: 40%; 
+        padding: @padding;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+          }
+        }
+
+        .bannerImgStyle(){
+            width: 100%;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+    
